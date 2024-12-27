@@ -1,0 +1,27 @@
+:root {
+    --p-blue: hsl(246, 80%, 60%);
+    --p-light-red-wk: hsl(15, 100%, 70%);
+    --p-soft-blue-pl:hsl(195, 74%, 62%);
+    --p-lime-green-ex: hsl(145, 58%, 55%);
+    --p-light-red-st: hsl(348, 100%, 68%);
+    --p-violet-sc: hsl(264, 64%, 52%);
+    --p-soft-orange-sfc: hsl(43, 84%, 65%);
+
+    --n-vdk-blue: hsl(226, 43%, 10%);
+    --n-dk-blue: hsl(235, 46%, 20%);
+    --n-ds-blue: hsl(235, 45%, 61%);
+    --n-pale-blue: hsl(236, 100%, 87%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", serif;
+    font-size: 1.125rem;
+
+}
