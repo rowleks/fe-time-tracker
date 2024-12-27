@@ -21,7 +21,158 @@
 }
 
 body {
-    font-family: "Rubik", serif;
+    font-family: "Rubik", sans-serif;
     font-size: 1.125rem;
+    padding: 3rem 1rem;
+    background-color: var(--n-vdk-blue);
+    color: #FFF;
 
+}
+
+span {
+    font-size: .8rem;
+    color: var(--n-ds-blue);
+}
+
+b {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.upper p {
+    font-weight: 400;
+    color: var(--n-pale-blue);
+}
+
+.upper span {
+    font-weight: 300;
+    color: var(--n-pale-blue);
+}
+
+
+section.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+div.profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--n-dk-blue);
+    border-radius: 10px;
+    width: 270px;
+}
+
+.profile-card img {
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    
+}
+
+div.upper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--p-blue);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+div.lower {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--n-dk-blue);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    background-color: var(--n-dk-blue);
+    border-radius: 10px;
+}
+
+.top {
+    height: 35px;
+    background-color: var(--p-light-red-wk);
+    background-repeat: no-repeat;
+    background-position: right 10px top -10px;
+    background-size: 65px;
+    border-radius: 10px 10px 0 0;
+}
+
+div.card-info {
+    background-color: var(--n-dk-blue);
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+    top: -5px;
+}
+
+.work {
+    background-image: url(../assets/icon-work.svg);
+}
+
+.play {
+    background-image: url(../assets/icon-play.svg);
+    background-color: var(--p-soft-blue-pl);
+}
+
+.study {
+    background-image: url(../assets/icon-study.svg);
+    background-color: var(--p-light-red-st);
+}
+
+.exc {
+    background-image: url(../assets/icon-exercise.svg);
+    background-color: var(--p-lime-green-ex);
+}
+
+.social {
+    background-image: url(../assets/icon-social.svg);
+    background-color: var(--p-violet-sc);
+}
+
+.self {
+    background-image: url(../assets/icon-self-care.svg);
+    background-color: var(--p-soft-orange-sfc);
+}
+
+div.card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.ctgr, div.date {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+div.date {
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.date img {
+    width: 15px;
+}
+
+.date span {
+    font-weight: 300;
+    color: var(--n-pale-blue);
+}
+
+.card p {
+    font-weight: 300;
 }
