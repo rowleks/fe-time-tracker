@@ -72,6 +72,7 @@ div.profile-card {
     width: 50px;
     border-radius: 50%;
     border: 3px solid #fff;
+    cursor: pointer;
     
 }
 
@@ -102,12 +103,14 @@ div.card {
 }
 
 .top {
-    height: 35px;
+    height: 40px;
     background-color: var(--p-light-red-wk);
     background-repeat: no-repeat;
     background-position: right 10px top -10px;
-    background-size: 65px;
+    background-size: 60px;
     border-radius: 10px 10px 0 0;
+    position: relative;
+    z-index: 0;
 }
 
 div.card-info {
@@ -116,6 +119,27 @@ div.card-info {
     padding: 1rem;
     position: relative;
     top: -5px;
+    z-index: 9;
+}
+
+.card-info::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    bottom: -5px;
+    background-color: hsla(235, 45%, 61%, 0);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.card-info:hover::after {
+    background-color:  hsla(235, 45%, 61%, .3);
+}
+
+div.card-info:hover {
+    background-color: hsla(235, 46%, 20%, .7);;
 }
 
 .work {
@@ -150,21 +174,23 @@ div.card-info {
 div.card-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 div.ctgr, div.date {
     display: flex;
-    flex-direction: column;
     gap: .3rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 div.date {
-    align-items: flex-end;
     gap: 1rem;
 }
 
-.date img {
+.ctgr img {
     width: 15px;
 }
 
@@ -175,4 +201,64 @@ div.date {
 
 .card p {
     font-weight: 300;
+}
+
+@media (min-width: 900px) {
+
+    body {
+        height: 100vh;
+    }
+    section.container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 250px);
+        grid-template-rows: repeat(2, 200px);
+        justify-content: center;
+        justify-items: center;
+        align-items: unset;
+        align-content: center;
+        grid-gap: 1.5rem;
+        height: 100%;
+    }
+
+   .profile-card {
+    grid-row: 1/-1;
+    max-width: 100%;
+   }
+
+   div.card {
+    max-width: 100%;
+   }
+
+   div.upper {
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+   }
+
+   .upper p {
+    font-size: 3.5ch;
+    font-weight: 400;
+   }
+
+   div.lower {
+    flex: .8;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+   div.date p {
+    font-size: 3ch;
+    font-weight: 300;
+   }
+
+   div.card-info {
+    justify-content: space-around;
+    height: 100%;
+   }
+
+   div.date {
+    flex-direction: column;
+    align-items: flex-start;
+   }
 }
