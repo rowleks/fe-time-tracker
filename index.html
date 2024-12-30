@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <section class="container">
+    <section class="container" id="container">
         <div class="profile-card">
             <div class="upper">
                 <img src="./assets/image-jeremy.png" alt="">
@@ -22,98 +22,105 @@
                 </div>
             </div>
             <div class="lower">
-                <span>Daily</span>
-                <span><b>Weekly</b></span>
-                <span>Monthly</span>
+                <span class="timeframes" onclick="getData('daily')">Daily</span>
+                <span class="timeframes" onclick="getData('weekly')">Weekly</span>
+                <span class="timeframes" onclick="getData('monthly')">Monthly</span>
             </div>
         </div>
 
-        <div class="card">
-            <div class="top work"></div>
-            <div class="card-info">
-                <div class="ctgr">
-                    <h6>Work</h6>
-                    <img src="./assets/icon-ellipsis.svg" alt="">
-                </div>
-                <div class="date">
-                    <p>32hrs</p>
-                    <span>Last Week - 8hrs</span>
+        <div class="cards" id="cards">
+            <div class="message"> Please select a timeframe</div>
+            <!-- <div class="card">
+                <div class="top work"></div>
+                <div class="card-info">
+                    <div class="ctgr">
+                        <h6>Work</h6>
+                        <img src="./assets/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="date">
+                        <p class="current">32hrs</p>
+                        <span class="previous">Last Week - 8hrs</span>
+                    </div>
                 </div>
             </div>
+    
+            <div class="card">
+                <div class="top play"></div>
+                <div class="card-info">
+                    <div class="ctgr">
+                        <h6>Play</h6>
+                        <img src="./assets/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="date">
+                        <p class="current" >32hrs</p>
+                        <span class="previous">Last Week - 8hrs</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="top study"></div>
+                <div class="card-info">
+                    <div class="ctgr">
+                        <h6>Study</h6>
+                        <img src="./assets/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="date">
+                        <p class="current" >32hrs</p>
+                        <span class="previous">Last Week - 8hrs</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="top exc"></div>
+                <div class="card-info">
+                    <div class="ctgr">
+                        <h6>Exercise</h6>
+                        <img src="./assets/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="date">
+                        <p class="current" >32hrs</p>
+                        <span class="previous">Last Week - 8hrs</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="top social"></div>
+                <div class="card-info">
+                    <div class="ctgr">
+                        <h6>Social</h6>
+                        <img src="./assets/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="date">
+                        <p class="current" >32hrs</p>
+                        <span class="previous">Last Week - 8hrs</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="top self"></div>
+                <div class="card-info">
+                    <div class="ctgr">
+                        <h6>Self Care</h6>
+                        <img src="./assets/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="date">
+                        <p class="current" >32hrs</p>
+                        <span class="previous">Last Week - 8hrs</span>
+                    </div>
+                </div>
+            </div> -->
+
         </div>
 
-        <div class="card">
-            <div class="top play"></div>
-            <div class="card-info">
-                <div class="ctgr">
-                    <h6>Play</h6>
-                    <img src="./assets/icon-ellipsis.svg" alt="">
-                </div>
-                <div class="date">
-                    <p>32hrs</p>
-                    <span>Last Week - 8hrs</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="top study"></div>
-            <div class="card-info">
-                <div class="ctgr">
-                    <h6>Study</h6>
-                    <img src="./assets/icon-ellipsis.svg" alt="">
-                </div>
-                <div class="date">
-                    <p>32hrs</p>
-                    <span>Last Week - 8hrs</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="top exc"></div>
-            <div class="card-info">
-                <div class="ctgr">
-                    <h6>Exercise</h6>
-                    <img src="./assets/icon-ellipsis.svg" alt="">
-                </div>
-                <div class="date">
-                    <p>32hrs</p>
-                    <span>Last Week - 8hrs</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="top social"></div>
-            <div class="card-info">
-                <div class="ctgr">
-                    <h6>Social</h6>
-                    <img src="./assets/icon-ellipsis.svg" alt="">
-                </div>
-                <div class="date">
-                    <p>32hrs</p>
-                    <span>Last Week - 8hrs</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="top self"></div>
-            <div class="card-info">
-                <div class="ctgr">
-                    <h6>Self Care</h6>
-                    <img src="./assets/icon-ellipsis.svg" alt="">
-                </div>
-                <div class="date">
-                    <p>32hrs</p>
-                    <span>Last Week - 8hrs</span>
-                </div>
-            </div>
-        </div>
+        
         
 
     </section>
     
+<script src="./js/script.js"></script>
 </body>
 </html>

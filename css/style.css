@@ -29,15 +29,15 @@ body {
 
 }
 
+.cards {
+    display: contents;
+}
+
 span {
     font-size: .8rem;
     color: var(--n-ds-blue);
 }
 
-b {
-    color: #FFF;
-    font-weight: 400;
-}
 
 .upper p {
     font-weight: 400;
@@ -56,6 +56,7 @@ section.container {
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
 
 }
@@ -92,6 +93,14 @@ div.lower {
     background-color: var(--n-dk-blue);
     padding: 1rem;
     border-radius: 10px;
+}
+
+.lower span {
+    cursor: pointer;
+}
+
+.lower span:hover, .lower span.active {
+    color: #fff;
 }
 
 div.card {
@@ -260,5 +269,10 @@ div.date {
    div.date {
     flex-direction: column;
     align-items: flex-start;
+   }
+
+   div.message {
+    grid-column: 2 / -1;
+    align-self: flex-end;
    }
 }
