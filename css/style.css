@@ -24,6 +24,7 @@ body {
     font-family: "Rubik", sans-serif;
     font-size: 1.125rem;
     padding: 3rem 1rem;
+    padding-bottom: 0;
     background-color: var(--n-vdk-blue);
     color: #FFF;
 
@@ -165,7 +166,7 @@ div.card-info:hover {
     background-color: var(--p-light-red-st);
 }
 
-.exc {
+.exercise {
     background-image: url(../assets/icon-exercise.svg);
     background-color: var(--p-lime-green-ex);
 }
@@ -271,8 +272,15 @@ div.date {
     align-items: flex-start;
    }
 
-   div.message {
-    grid-column: 2 / -1;
-    align-self: flex-end;
-   }
+}
+
+div.attribution { 
+    font-size: 14px; 
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--white);
+ }
+
+.attribution a { 
+    color: var(--p-light-red-wk); 
 }

@@ -40,8 +40,6 @@ function renderData(data, time) {
         
     }
     )
-
-
 }
 
 async function getData(time) {
@@ -62,6 +60,4 @@ timeFrames.forEach(time => {
 })
 
 
-
-
-
+getData('weekly')
