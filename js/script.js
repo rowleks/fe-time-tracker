@@ -43,10 +43,14 @@ function renderData(data, time) {
 }
 
 async function getData(time) {
-    const res = await fetch('/data.json')
-    if(!res.ok) { throw new Error('Failed to fetch data')}
-    const data = await res.json()
-    renderData(data, time)
+    try 
+    {
+        const res = await fetch('/data.json')
+        if(!res.ok) { throw new Error('Failed to fetch data')}
+        const data = await res.json()
+        renderData(data, time)
+    }
+    catch(error) { throw new Error('Error occured: ' + error)}
 }
 
 
